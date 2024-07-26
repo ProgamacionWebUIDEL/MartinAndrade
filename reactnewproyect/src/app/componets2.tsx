@@ -1,3 +1,5 @@
+'use client'
+
 import { getImageUrl } from './utils.js';
 
 function Avatar({ person, size }) {

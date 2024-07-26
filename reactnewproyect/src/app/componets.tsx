@@ -1,3 +1,5 @@
+'use client'
+import { onsumit, onsumitPost } from './hook.js';
 
 
 function Profile() {
@@ -11,8 +13,16 @@ function Profile() {
 
   export function Bottom(){
     return(
-      <button type="button">
-        enviar inf
+      <button type="button" onClick={onsumit}>
+        Enviar info
+      </button>
+    );
+  }
+
+  export function Bottomsend(){
+    return(
+      <button type="button" onClick={onsumitPost}>
+        llamarPost
       </button>
     );
   }
@@ -21,7 +31,9 @@ function Profile() {
     return (
       <section>
         <h1>Amazing scientists</h1>
-        <Profile />
+        <Profile/>
+        <Bottom/>
+        <Bottomsend/>
 
       </section>
     );
