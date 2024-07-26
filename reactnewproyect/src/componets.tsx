@@ -9,6 +9,13 @@ function Profile() {
     );
   }
 
+  export function Bottom(){
+    return(
+      <button type="button">
+        enviar inf
+      </button>
+    );
+  }
 
   export default function componets() {
     return (
